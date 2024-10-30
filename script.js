@@ -12,5 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const menu = dropdown.querySelector('.dropdown-content');
       menu.style.display = 'none';
     });
+// Example: Load more matches dynamically (optional)
+const loadMoreBtn = document.querySelector('.details-btn');
+loadMoreBtn.addEventListener('click', () => {
+  alert('Match details coming soon!');
+});
+
   });
 });
