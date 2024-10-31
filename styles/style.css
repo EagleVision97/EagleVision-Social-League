@@ -2,11 +2,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #f5f5f5;
 }
 
-/* Navigation Bar */
+/* Navbar Styling */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -18,29 +18,19 @@ body {
   z-index: 1000;
 }
 
-/* Logo & Tagline */
-.navbar-left {
-  display: flex;
-  align-items: center;
-}
-
 .logo img {
   height: 50px;
-  margin-right: 10px;
 }
 
 .tagline {
-  font-size: 12px;
   color: #fff;
   font-style: italic;
+  margin-left: 10px;
 }
 
-/* Center Navigation Links */
 .navbar-center {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .navbar-center li {
@@ -48,41 +38,26 @@ body {
 }
 
 .navbar-center a {
-  text-decoration: none;
   color: #fff;
   padding: 10px 15px;
-  display: block;
+  text-decoration: none;
 }
 
 .navbar-center a:hover {
   background-color: #ffa500;
-  transition: background-color 0.3s ease;
 }
 
-/* Dropdown Menu */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #fff;
   min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown-content a {
-  color: #004b8d;
-  padding: 12px 16px;
-  text-decoration: none;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Right-Aligned Links */
 .navbar-right {
   display: flex;
   align-items: center;
@@ -93,13 +68,13 @@ body {
   margin-right: 10px;
 }
 
-.login-btn {
+.login-btn, .cta-btn {
   color: #fff;
   background-color: #ffa500;
   padding: 5px 10px;
   border-radius: 5px;
-  margin-right: 10px;
   text-decoration: none;
+  margin-right: 10px;
 }
 
 .social-icons img {
@@ -108,124 +83,33 @@ body {
 }
 
 .language-selector {
-  padding: 5px;
+  margin-right: 10px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar-center {
-    display: none;
-  }
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: white;
+}
 
-  .navbar-right {
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar-center, .navbar-right {
     display: none;
   }
 
   .hamburger {
     display: block;
   }
-} /* Close the media query here */
 
-/* Home Section Styles */
-.home-section {
-  padding: 20px;
-  background-color: #f4f4f4;
-}
+  .navbar.active .navbar-center, .navbar.active .navbar-right {
+    display: flex;
+    flex-direction: column;
+    background-color: #004b8d;
+  }
 
-.hero {
-  position: relative;
-  text-align: center;
-}
-
-.hero-banner {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 2px 2px 8px black;
-}
-
-.cta-btn {
-  background-color: gold;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.featured-matches, .news, .highlights {
-  margin-top: 30px;
-}
-
-.match-card, .news-item, .video-container {
-  background-color: white;
-  margin: 10px;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.details-btn, .read-more {
-  display: inline-block;
-  margin-top: 10px;
-  text-decoration: none;
-  color: #0073e6;
-}
-/**** League Standings and Fixtures & Results Styles ****/
-.league-standings, .fixtures-results {
-  padding: 20px;
-  background-color: #f8f8f8;
-  margin: 20px 0;
-}
-
-.league-standings h2, .fixtures-results h2 {
-  color: #004b8d;
-}
-
-.season-tabs, .fixtures-tabs {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.season-btn, .fixtures-btn {
-  background-color: #004b8d;
-  color: white;
-  padding: 8px 16px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.season-btn.active, .fixtures-btn.active {
-  background-color: #ffa500;
-}
-
-.season-table table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.season-table th, .season-table td {
-  padding: 10px;
-  border: 1px solid #ddd;
-  text-align: center;
-}
-
-.fixture-list, .result-list {
-  margin-top: 20px;
-}
-
-.fixture, .result {
-  padding: 10px;
-  background-color: white;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  .dropdown-content {
+    position: relative;
+    background-color: #004b8d;
+  }
 }
