@@ -177,3 +177,55 @@ body {
   text-decoration: none;
   color: #0073e6;
 }
+/**** League Standings and Fixtures & Results Styles ****/
+.league-standings, .fixtures-results {
+  padding: 20px;
+  background-color: #f8f8f8;
+  margin: 20px 0;
+}
+
+.league-standings h2, .fixtures-results h2 {
+  color: #004b8d;
+}
+
+.season-tabs, .fixtures-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.season-btn, .fixtures-btn {
+  background-color: #004b8d;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.season-btn.active, .fixtures-btn.active {
+  background-color: #ffa500;
+}
+
+.season-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.season-table th, .season-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.fixture-list, .result-list {
+  margin-top: 20px;
+}
+
+.fixture, .result {
+  padding: 10px;
+  background-color: white;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
