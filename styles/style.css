@@ -124,7 +124,9 @@ body {
   .hamburger {
     display: block;
   }
-  /* Home Section Styles */
+} /* Close the media query here */
+
+/* Home Section Styles */
 .home-section {
   padding: 20px;
   background-color: #f4f4f4;
@@ -174,6 +176,4 @@ body {
   margin-top: 10px;
   text-decoration: none;
   color: #0073e6;
-}
-
 }
