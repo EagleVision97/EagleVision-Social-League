@@ -66,84 +66,90 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
-  <main>
-    <!-- Home Section -->
-    <section id="home" class="section">
-      <h2>Top Stories</h2>
-      <div class="top-stories">
-        <!-- Add Top Stories Here -->
-        <article class="story-card">Story 1: Exciting Match</article>
-        <article class="story-card">Story 2: New Record Broken</article>
+
+  <!-- Hero Section with Carousel and Highlights -->
+  <section id="hero" class="hero-section">
+    <div class="carousel">
+      <div class="carousel-item active">
+        <h2>Upcoming Match: Club A vs Club B</h2>
+        <p>November 5, 2024 | 15:00 PM</p>
+        <a href="#fixtures-results" class="cta-btn">See Details</a>
       </div>
-    </section>
-
-    <!-- League Standings: Top 10 Teams -->
-    <section id="league-standings" class="section">
-      <h2>Top 10 Teams in League Standings</h2>
-      <table class="standings-table">
-        <thead>
-          <tr><th>Position</th><th>Club</th><th>Points</th></tr>
-        </thead>
-        <tbody>
-          <!-- Example rows -->
-          <tr><td>1</td><td>Club A</td><td>45</td></tr>
-          <tr><td>2</td><td>Club B</td><td>42</td></tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- Featured Players -->
-    <section id="clubs-players" class="section">
-      <h2>Featured Players</h2>
-      <div class="featured-players">
-        <!-- Player cards -->
-        <div class="player-card">Player 1</div>
-        <div class="player-card">Player 2</div>
+      <div class="carousel-item">
+        <h2>Match Result: Club C vs Club D</h2>
+        <p>Club C 1 - 3 Club D | October 30, 2024</p>
+        <a href="#fixtures-results" class="cta-btn">View Highlights</a>
       </div>
-    </section>
+      <div class="carousel-item">
+        <h2>Goal of the Week</h2>
+        <p>Club A's Star Striker - Stunning Finish!</p>
+        <a href="#goal-week" class="cta-btn">Watch Now</a>
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <button class="prev-btn" onclick="prevSlide()">❮</button>
+      <button class="next-btn" onclick="nextSlide()">❯</button>
+    </div>
+  </section>
 
-    <!-- Featured Coach -->
-    <section id="featured-coach" class="section">
-      <h2>Featured Coach</h2>
-      <div class="coach-info">Details about the featured coach.</div>
-    </section>
+  <!-- Highlight Video Section -->
+  <section class="highlight-video">
+    <video autoplay muted loop>
+      <source src="videos/league-highlights.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay">
+      <h2>Relive the Best Moments</h2>
+      <a href="#highlights" class="video-cta">Watch Highlights</a>
+    </div>
+  </section>
 
-    <!-- Goal of the Week -->
-    <section id="goal-week" class="section">
-      <h2>Goal of the Week</h2>
+  <!-- Dynamic League Standings -->
+  <section id="league-standings" class="section">
+    <h2>League Standings</h2>
+    <table class="standings-table">
+      <thead>
+        <tr><th>Position</th><th>Club</th><th>Points</th></tr>
+      </thead>
+      <tbody>
+        <!-- Rows for top 10 teams with animated points -->
+        <tr><td>1</td><td>Club A</td><td>45</td></tr>
+        <tr><td>2</td><td>Club B</td><td>42</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Featured Players and Coach -->
+  <section id="featured" class="section">
+    <h2>Featured Players & Coach</h2>
+    <div class="featured-profiles">
+      <div class="player-card">Player 1</div>
+      <div class="player-card">Player 2</div>
+      <div class="coach-card">Coach Profile</div>
+    </div>
+  </section>
+
+  <!-- Goal of the Week -->
+  <section id="goal-week" class="goal-section">
+    <h2>Goal of the Week</h2>
+    <div class="goal-video">
       <video controls>
         <source src="videos/goal-week.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-    </section>
+      <p>Club A vs Club B - Stunning Strike by Star Striker!</p>
+    </div>
+  </section>
 
-    <!-- Latest News -->
-    <section id="latest-news" class="section">
-      <h2>Latest News</h2>
-      <div class="news-container">
-        <article class="news-item">News Article 1</article>
-        <article class="news-item">News Article 2</article>
-      </div>
-    </section>
+  <!-- Sponsors Section -->
+  <section id="sponsors" class="section sponsors">
+    <h2>Our Top Sponsors</h2>
+    <div class="sponsor-logos">
+      <img src="images/sponsor1.png" alt="Sponsor 1">
+      <img src="images/sponsor2.png" alt="Sponsor 2">
+    </div>
+  </section>
 
-    <!-- EagleVision Achievements -->
-    <section id="achievements" class="section">
-      <h2>EagleVision Achievements</h2>
-      <ul class="achievements-list">
-        <li>Championship Titles</li>
-        <li>Record-breaking Performances</li>
-      </ul>
-    </section>
-
-    <!-- Top Sponsors -->
-    <section id="top-sponsors" class="section">
-      <h2>Our Top Sponsors</h2>
-      <div class="sponsors-logos">
-        <img src="images/sponsor1.png" alt="Sponsor 1">
-        <img src="images/sponsor2.png" alt="Sponsor 2">
-      </div>
-    </section>
-  </main>
+  <script src="scripts/script.js"></script>
 </body>
 </html>
