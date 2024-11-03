@@ -5,27 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EagleVision Social League</title>
   <link rel="stylesheet" href="styles/style.css">
-  <script src="scripts/script.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <!-- Header with Navigation -->
   <header>
     <nav class="navbar">
+      <!-- Logo & Tagline -->
       <div class="navbar-left">
         <a href="index.html" class="logo">
           <img src="images/eagle-logo.png" alt="EagleVision Logo">
           <span class="tagline">Soaring Above the Rest</span>
         </a>
       </div>
+
+      <!-- Navigation Links -->
       <ul class="navbar-center">
         <li><a href="#home">Home</a></li>
-        <li><a href="#league-standings">League Standings</a></li>
-        <li><a href="#fixtures-results">Fixtures & Results</a></li>
-        <li><a href="#clubs-players">Clubs & Players</a></li>
+        <li class="dropdown">
+          <a href="#league-standings">League Standings</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Current Season</a></li>
+            <li><a href="#">Past Seasons</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#fixtures-results">Fixtures & Results</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Club-wise Fixtures</a></li>
+            <li><a href="#">Live Scores</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#clubs-players">Clubs & Players</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Club Profiles</a></li>
+            <li><a href="#">Top Performers</a></li>
+          </ul>
+        </li>
         <li><a href="#fantasy-league">Fantasy League</a></li>
         <li><a href="#merchandise-store">Merchandise Store</a></li>
         <li><a href="#streaming-highlights">Streaming & Highlights</a></li>
       </ul>
+
+      <!-- Right-Aligned Features -->
       <div class="navbar-right">
         <input type="text" class="search-bar" placeholder="Search clubs, players...">
         <a href="#" class="login-btn">Login/Register</a>
