@@ -112,4 +112,72 @@ body {
     position: relative;
     background-color: #004b8d;
   }
+/* Hero Section with Carousel */
+.hero-section {
+  position: relative;
+  background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 102, 51, 0.8));
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Highlight Video Overlay */
+.highlight-video {
+  position: relative;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 51, 102, 0.6);
+  padding: 20px;
+}
+
+.video-cta {
+  background-color: #008000;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Animated League Standings */
+.standings-table td {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 }
