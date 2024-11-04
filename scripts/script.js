@@ -1,3 +1,9 @@
+function toggleMenu() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('active');
+}
+
+
 let currentSlide = 0;
 const slides = document.querySelectorAll('.carousel-item');
 
