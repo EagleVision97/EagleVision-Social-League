@@ -78,3 +78,18 @@ header nav ul li a {
 #next {
     right: 10px;
 }
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #666;
+}
